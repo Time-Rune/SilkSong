@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4108478404735970064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4108478404735970070}
+  - component: {fileID: 4108478404735970065}
+  - component: {fileID: 723737696}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4108478404735970070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108478404735970064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.608286, y: 11.253919, z: -3.2753072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4108478404735970065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108478404735970064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e86d653b4449764f84dcde197151fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    maxHp: 5
+    currentHp: 5
+    currentSilk: 0
+    maxSilk: 8
+    silkHeal: 3
+    damage: 1
+    moveSpeed: 7
+    jumpForce: 12
+    dashForce: 20
+    maxDash: 1
+    extraJump: 0
+    dashTime: 0.25
+    enemyKnockbackPower: 5
+    selfKnockbackPower: 1
+    attackCooldown: 0.15
+    parryWindow: 0.25
+    parryCooldown: 1
+    toolCooldown: 0.35
+    respawnScene: DirtCave0
+    respawnChairName: 
+    respawnPos: {x: 0, y: 0, z: 0}
+    copperShard: 0
+    scaleShard: 0
+    inventoryItemAmount: 
+    foundTalismans: 
+    equippedTalismanName: 0
+    redToolsCurrentCharge: []
+    foundRedTools: 
+    equippedRedTools: 
+    selectedRedToolId: 0
+    foundBlueTools: 
+    equippedBlueTools: 
+    foundYellowTools: 
+    equippedYellowTools: 
+    stunTime: 0.4
+    iFrameTime: 1.5
+  worldData:
+    maskUpgrades: 000000
+    silkUpgrades: 000000
+    doubleJump: 0
+    wallJump: 0
+    doorSwitches: 000000
+    bossDefeated: 000000
+    visitedRooms: []
+    enemyKillCount: 
+  bgm: {fileID: 723737696}
+  debugInventory: 1
+  inventorySlotPrefabs:
+  - {fileID: 475010677608141632, guid: 3487c6d860cfa5a468dda37aaf7f205b, type: 3}
+  - {fileID: 1311102287203912112, guid: 6548a3ac7ff828d41a2ebd55e9ffa83e, type: 3}
+  - {fileID: 9161044550701313846, guid: 705328680eef0a34dbba612117dbf725, type: 3}
+  - {fileID: 6367566741001451386, guid: 9e2001676f822304495aeea9cbbdbd13, type: 3}
+  - {fileID: 6566427743554660605, guid: e50c07c2cbc38d44c9aaed2fbb9480a8, type: 3}
+  - {fileID: 5760083326480760256, guid: 6c7e91c0a4978a344b998ee14ef56517, type: 3}
+  - {fileID: 1446873144896664509, guid: a3179827f0f64484db70ef6bacbab155, type: 3}
+  - {fileID: 5760083326480760256, guid: bd13da5240e2af045a1c5aafa528268b, type: 3}
+  enemyLoreData:
+  - {fileID: 11400000, guid: eb0e515d3b138054d9a9ca9d53b0afab, type: 2}
+  - {fileID: 11400000, guid: 1b44afb35985d9446bd6a55a4b78f340, type: 2}
+  - {fileID: 11400000, guid: 99ae56eb4de8abe49a01f972f0ca66ab, type: 2}
+  - {fileID: 11400000, guid: f6bcfc4be75c88e468a699611ac7abcd, type: 2}
+  - {fileID: 11400000, guid: f2a52ee1b6168d64a9179c2474f02fff, type: 2}
+  - {fileID: 11400000, guid: f87c9cf664fecb94b8823a7b6e8af0d6, type: 2}
+  - {fileID: 11400000, guid: a1c9176e5e2652f409c2207fbcf66c92, type: 2}
+  - {fileID: 11400000, guid: ae67d1fdb5786fc448918f416f1365f6, type: 2}
+  talismanData:
+  - {fileID: 2189655057926892909, guid: 45206d6973ee08c4eb6908e6e963d5e7, type: 3}
+  - {fileID: 5569097994143329607, guid: b4a86edfab965ed4b9a48c364b139331, type: 3}
+  equippedTalisman: {fileID: 0}
+  talismanHolder: {fileID: 0}
+  redToolData:
+  - {fileID: 11400000, guid: 19a7396d1f16f9e46bc238f0d2402047, type: 2}
+  - {fileID: 11400000, guid: 40438ee527e218140bc96ab1d7569dbe, type: 2}
+  - {fileID: 11400000, guid: a3b6b2c8a78686c4f9d7b7e8afee2726, type: 2}
+  blueToolData:
+  - {fileID: 11400000, guid: 087fce91f79cd9c40914a93a0785334a, type: 2}
+  - {fileID: 11400000, guid: 8690e254a89bf8c48b4cd6c9e4275d04, type: 2}
+  yellowToolData:
+  - {fileID: 11400000, guid: 98bf47e00d768684eb687f09b09153ff, type: 2}
+--- !u!82 &723737696
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108478404735970064}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
