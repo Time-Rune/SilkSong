@@ -87,6 +87,21 @@ Week1:
   - ​                \\=> 向前扔针
   - ​                \\=> 范围AOE
   - ​                \\=> 向下 钻 (四声)
+  - ## Skill tree
+
+- branch1 : dash
+  - ​                \\=> dash with no damage from enemy => dash to damage enemy
+  - ​                \\=> twice dash
+  - ​                \\=> dash distance
+- branch2 : attack
+  - ​                \\=> attack distance
+  - ​                \\=> attack frequency
+  - ​                \\=> attack with far damage
+- 分支3 : 特殊技能
+  - ​                \\=> Throw needle to attack enemies in a line
+  - ​                \\=> a large AOE damage
+  - ​                \\=> attack enemies below for times
+
 
 
 
