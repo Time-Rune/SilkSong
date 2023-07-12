@@ -1,4 +1,3 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,7 +19,7 @@ public class SceneSwitcher : MonoBehaviour
     private void Update()
     {
         ntimes = Time.time;
-        if (ntimes - stimes >= 3)
+        if (ntimes - stimes >= 4.6)
         {
             SwitchScene("MainMenu");
         }
