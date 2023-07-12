@@ -97,7 +97,7 @@ Week1:
   - ​                \\=> attack distance
   - ​                \\=> attack frequency
   - ​                \\=> attack with far damage
-- 分支3 : 特殊技能
+- branch : special skills
   - ​                \\=> Throw needle to attack enemies in a line
   - ​                \\=> a large AOE damage
   - ​                \\=> attack enemies below for times
