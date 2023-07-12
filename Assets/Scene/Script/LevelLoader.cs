@@ -44,11 +44,12 @@ public class LevelLoader : MonoBehaviour
 
     public void SceneChange(Scene scene, LoadSceneMode mode)
     {
-        GameMaster.instance.PatchInventoryReference();
-        GameMaster.instance.AddVisitedRoom(scene.name);
-        UpdatePlayerPosition();
+        GameMaster.instance.PatchInventoryReference(); // 更新物品清单
+        GameMaster.instance.AddVisitedRoom(scene.name); // 更新已经访问房间
+        UpdatePlayerPosition(); // 更新玩家位置
     }
 
+    // 初始化重生点
     private void SpawnPointInit()
     {
         if (GameMaster.instance.playerData.respawnScene == "")
@@ -105,7 +106,7 @@ public class LevelLoader : MonoBehaviour
             spawnPosName = "";
             player.rb.gravityScale = player.originalGravityScale;
         }
-        player.disableControlCounter -= 1;
+        player.disableControlCounter -= 1; // 解除 禁用控制.
         if (player.disableControlCounter < 0)
             player.disableControlCounter = 0;
     }
@@ -137,4 +138,5 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(sceneName);
         anim.SetBool("changeScene", false);
     }
+    
 }
