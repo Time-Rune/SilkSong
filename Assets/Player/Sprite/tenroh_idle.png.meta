@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 9ca34c7b670c60d4e95bb6313448c8ed
+guid: 989094865bc12c842b94708aa4a97c65
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6769917992029995322
-    second: tenroh_idle_0
-  - first:
-      213: 3241729686006488332
-    second: tenroh_idle_1
-  - first:
-      213: -7162175311174392981
-    second: tenroh_idle_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -56,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tenroh_idle_0
+      name: Dreamnail_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 128
-        height: 128
+        y: 484
+        width: 124
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ceb68e647b6c02a0800000000000000
-      internalID: -6769917992029995322
+      spriteID: 2845f5855efa5634784a5e1fe487ed5f
+      internalID: -909558358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tenroh_idle_1
+      name: Dreamnail_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 682
+        y: 468
+        width: 124
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0d514859ffecfc20800000000000000
-      internalID: 3241729686006488332
+      spriteID: 28199e6956c278646995507540343f50
+      internalID: 1091855397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tenroh_idle_2
+      name: Dreamnail_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 812
+        y: 500
+        width: 125
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,8 +161,323 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b63a0665087da9c90800000000000000
-      internalID: -7162175311174392981
+      spriteID: 8b7938fddd2ac6442817d1ce1358b4ac
+      internalID: -893125034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 393
+        width: 120
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d098b88757bad428ed2eb231ae2ff5
+      internalID: 1643038154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 375
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df766796208051a46b3ccf4b1eff2f94
+      internalID: -1346246924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 320
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0072afb5724743941a6d0afa7f5a6d1e
+      internalID: -1968520475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 380
+        width: 124
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db5f6b9c0a4dbe4d9133941ccee94e8
+      internalID: -489949305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_7
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 316
+        width: 64
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b6cbf2c7ab42f48a13b9f4f946e2a6
+      internalID: -1412252452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_8
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 370
+        width: 120
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dfb0c78bfa2134292422fa8d62ba4a
+      internalID: 870925632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 190
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef15c389bb95534ea433eb18caffc43
+      internalID: -1570926677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 190
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3351834b2bb588847b865196c14b5bf8
+      internalID: 1563531074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 186
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73cb3868f1294242a2930a0c15c4f27
+      internalID: -2030493742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_12
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 185
+        width: 61
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad843b6216ae7f408bc9eb06ffb6e90
+      internalID: -232122339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_13
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 150
+        width: 124
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913cb9cc0f146274f86c7240208a33d0
+      internalID: 1397606052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_14
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 186
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d589d5d192b4224ca78787710e7890c
+      internalID: 866100780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_15
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 5
+        width: 61
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815132e67e9e9b449890a5184ebf5dec
+      internalID: -631924874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_16
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2164cd7b60212114dbf66732d4d4cd15
+      internalID: 1784694400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamnail_17
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 0
+        width: 61
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d435ab33b61e0459b21b6131b9b4a9
+      internalID: -1206367207
       vertices: []
       indices: 
       edges: []
@@ -187,9 +493,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tenroh_idle_0: -6769917992029995322
-      tenroh_idle_1: 3241729686006488332
-      tenroh_idle_2: -7162175311174392981
+      Dreamnail_0: -909558358
+      Dreamnail_1: 1091855397
+      Dreamnail_10: 1563531074
+      Dreamnail_11: -2030493742
+      Dreamnail_12: -232122339
+      Dreamnail_13: 1397606052
+      Dreamnail_14: 866100780
+      Dreamnail_15: -631924874
+      Dreamnail_16: 1784694400
+      Dreamnail_17: -1206367207
+      Dreamnail_2: -893125034
+      Dreamnail_3: 1643038154
+      Dreamnail_4: -1346246924
+      Dreamnail_5: -1968520475
+      Dreamnail_6: -489949305
+      Dreamnail_7: -1412252452
+      Dreamnail_8: 870925632
+      Dreamnail_9: -1570926677
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,0 +1,981 @@
+fileFormatVersion: 2
+guid: edf38c09339d8e949a626aa076cae6b2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Webbed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628
+        width: 85
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c13ca1a4523489468dc5141ef0f0d4d
+      internalID: -1645617217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 675
+        width: 132
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f294cfe1030144082fc538c964bde9
+      internalID: -657293756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 614
+        width: 85
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fa66427529bad4ba457e29aa19f55d
+      internalID: -931777821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_3
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 544
+        width: 86
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cbe753370e4cd4c9b126246fb0638a
+      internalID: 593286709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_4
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 671
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbd22cbfd5ebf34db75fdda2aad6286
+      internalID: 1255847514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 497
+        width: 91
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a0f69e08ff89e43a583393c9ebc8a6
+      internalID: -2007467234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 586
+        width: 124
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df82f8978aad9c94db8f95a0ceb45c55
+      internalID: -514438932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 481
+        width: 90
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710c242bb26612f4bbfbb8f57c83e16f
+      internalID: 1437174712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 571
+        width: 147
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc12d263d1b45c4c8935538bdab2cfd
+      internalID: 2127536254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_9
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 475
+        width: 97
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22f6678f13e7c34380ffb5e09e3a075
+      internalID: -1487685438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_10
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 546
+        width: 121
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc8ca7c461ae4948be040b719dd4fb7
+      internalID: -1216781881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_11
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 497
+        width: 121
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6008186a568404d9dcfcedc772248c
+      internalID: -106217017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_12
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 475
+        width: 118
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446f7e21f51ed50458fadb607fa3a378
+      internalID: 2142686933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_13
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 437
+        width: 130
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657c46e4bddd57a4a8811c130c23512d
+      internalID: -273424625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_14
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 444
+        width: 133
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33510c038349db043839775c9107d14c
+      internalID: -1142441991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 108
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001ab48a35ce46f43be6b2a7cc649540
+      internalID: 2120289272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 366
+        width: 126
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b9ddb842eab5246b542cfd8e04dd1c
+      internalID: 797765538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 366
+        width: 115
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4e286e0a6d04043a55278f9e7b38e4
+      internalID: -494049592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_18
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 366
+        width: 119
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138ae8376879ec545a5d6663625c6792
+      internalID: 999859828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_19
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 366
+        width: 133
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b59df295c42af647bfb7d20e982280b
+      internalID: -26374644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_20
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 310
+        width: 149
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed3535aca38a8b42928275a4536f5d3
+      internalID: 1766166535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_21
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 296
+        width: 129
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba88ff1598256674193ad871888a855c
+      internalID: 691000059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e3b48797f937047b1d7bff132874be
+      internalID: -1518747408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_23
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 650
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228aabc1274ddca43b8f55e1f8694a7c
+      internalID: -2054149936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_24
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 308
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41892ea2947864a489adf062d98557d0
+      internalID: -1902578144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_25
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 181
+        width: 141
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657e76869c16b3b4c977ee12bdbd171d
+      internalID: -2014863344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_26
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 164
+        width: 146
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c095097a3e85144ca3a9148827d5e47
+      internalID: 1415475770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_27
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 179
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bb5af2efff79d47b6c8ef78d676466
+      internalID: 1650895355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_28
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 135
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a65c6ac09f523b4ba356fec3f0a5cd0
+      internalID: 908918393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_29
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 133
+        width: 9
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24407bec5a8bcb4e9e3dd415907a63f
+      internalID: -235047716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_30
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 60
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e8108c2a9b8c547bb63e8d4810d66b
+      internalID: 777160668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_31
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 60
+        width: 40
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655e2c73c1e87a742a9495697f891fe9
+      internalID: 109273967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_32
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 125
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1e16381fff8884d8cabfa7249d3ea5
+      internalID: 506208381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_33
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 58
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1414c6574cd7ea54da52f184b37aa64c
+      internalID: 1646084931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_34
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 74
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eeb08a52122c14f82775fa859598f1
+      internalID: -477742597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_35
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 33
+        width: 75
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ece842f1be3524e96db9439978edf0
+      internalID: 1825934297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_36
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 63
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af40075abe6fe484fb661fc1ace2b2f3
+      internalID: -467192904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_37
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 11
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2983b420a824357438e41f810a207bb7
+      internalID: -1778746457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Webbed_38
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca760ed5cc032a469e86381ff4cdad8
+      internalID: 312531144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Webbed_0: -1645617217
+      Webbed_1: -657293756
+      Webbed_10: -1216781881
+      Webbed_11: -106217017
+      Webbed_12: 2142686933
+      Webbed_13: -273424625
+      Webbed_14: -1142441991
+      Webbed_15: 2120289272
+      Webbed_16: 797765538
+      Webbed_17: -494049592
+      Webbed_18: 999859828
+      Webbed_19: -26374644
+      Webbed_2: -931777821
+      Webbed_20: 1766166535
+      Webbed_21: 691000059
+      Webbed_22: -1518747408
+      Webbed_23: -2054149936
+      Webbed_24: -1902578144
+      Webbed_25: -2014863344
+      Webbed_26: 1415475770
+      Webbed_27: 1650895355
+      Webbed_28: 908918393
+      Webbed_29: -235047716
+      Webbed_3: 593286709
+      Webbed_30: 777160668
+      Webbed_31: 109273967
+      Webbed_32: 506208381
+      Webbed_33: 1646084931
+      Webbed_34: -477742597
+      Webbed_35: 1825934297
+      Webbed_36: -467192904
+      Webbed_37: -1778746457
+      Webbed_38: 312531144
+      Webbed_4: 1255847514
+      Webbed_5: -2007467234
+      Webbed_6: -514438932
+      Webbed_7: 1437174712
+      Webbed_8: 2127536254
+      Webbed_9: -1487685438
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
