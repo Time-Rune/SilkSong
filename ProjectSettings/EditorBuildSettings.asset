@@ -77,4 +77,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/Level/TestArea/RestChairRoomEx.unity
     guid: e59ad4830a14d244eb19cb956e11ea93
+  - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scene/Level/BerryScenes/BerryScene1.unity
+    guid: 7193f24dd33dc0944b73debec811c40a
+  - enabled: 1
+    path: Assets/Scene/Level/BerryScenes/BerryScene2.unity
+    guid: 52cda7ca58786cc4eb95cca7aee67f7c
+=======
+    path: Assets/Scene/Level/BerryScenes/Mossy_0.unity
+    guid: f3801a13bb4e6439485221bbf687e96c
+  - enabled: 1
+    path: Assets/Scene/Level/BerryScenes/Mossy_1.unity
+    guid: dbc99071283384aa793d5fae007836cb
+>>>>>>> 198c708 (update map)
   m_configObjects: {}
