@@ -357,22 +357,11 @@
                 },
                 {
                     "name": "",
-                    "id": "c5982380-0d84-4e9b-ae5c-9f2b72a47f9a",
+                    "id": "ae4002ed-498e-439a-aef2-558ca88ea265",
                     "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Parry",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ae4002ed-498e-439a-aef2-558ca88ea265",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
                     "action": "Parry",
                     "isComposite": false,
                     "isPartOfComposite": false
