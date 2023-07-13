@@ -4370,24 +4370,52 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 42923273, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 54146326, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 54146327, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 194033815, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 984005631, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1390681647, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1390681650, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1346246924, guid: 989094865bc12c842b94708aa4a97c65, type: 3}
+    - target: {fileID: 1597709195, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1597709197, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1597709198, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660418594, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761244479, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5268734040163008456, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
@@ -4401,6 +4429,10 @@ PrefabInstance:
     - target: {fileID: 5268734040163008468, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_Name
       value: Tenroh
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268734040163008468, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5268734040163008470, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_RootOrder

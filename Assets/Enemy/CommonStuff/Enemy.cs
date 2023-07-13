@@ -120,7 +120,7 @@ public class Enemy : MonoBehaviour
         Color deathColor = sprite.color;
         deathColor.r = 0.3f; deathColor.b = 0.3f; deathColor.g = 0.3f;
         sprite.color = deathColor;
-        sprite.transform.localScale = new Vector3(sprite.transform.localScale.x, -1, sprite.transform.localScale.z);
+        sprite.transform.localScale = new Vector3(sprite.transform.localScale.x, 1, sprite.transform.localScale.z);
         transform.gameObject.layer = LayerMask.NameToLayer("DeadEnemy");
         if (anim)
         {

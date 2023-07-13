@@ -772,6 +772,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1390681650, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1129564656, guid: 011ecbe172e83814aaee3643e2544501, type: 3}
     - target: {fileID: 5268734040163008468, guid: ba19acb34ed04654a9855dd604a9ffac, type: 3}
       propertyPath: m_Name
       value: Tenroh

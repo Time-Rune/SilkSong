@@ -101,6 +101,7 @@ public class Player : MonoBehaviour
     { none, paralyzed, slowed, drained };
 
     public static Player instance;
+
     public InputMaster inputMaster;
 
     #endregion Variables
@@ -112,6 +113,7 @@ public class Player : MonoBehaviour
         if (!instance)
         {
             instance = this;
+     
             inputMaster = new InputMaster();
             playerStat = GameMaster.instance.playerData;
             DontDestroyOnLoad(this.gameObject);
@@ -627,7 +629,12 @@ public class Player : MonoBehaviour
         // Attack
         anim.SetBool("pogoAttack", true);
         PlayerSlash pogoSlash = Instantiate(pogoSlashPrefab, pogoSlashPos, false);
-        pogoSlash.transform.localPosition = Vector3.zero;
+        Vector3 v = Vector3.zero;
+        v.x = -0.75f;
+        v.y = -0.5f;   
+        pogoSlash.transform.localPosition = v;
+        pogoSlash.transform.rotation=transform.rotation;
+        pogoSlash.transform.Rotate(0,0,-90);
         pogoSlash.disappearTime = playerStat.dashTime;
         pogoSlash.player = this;
     }
@@ -689,7 +696,8 @@ public class Player : MonoBehaviour
         }
         else
         {
-            slash.transform.localPosition += Vector3.right * 1f;
+            slash.transform.localRotation = Quaternion.Euler(0, 0, 180);
+            slash.transform.localPosition += Vector3.right * -1f;
         }
         slash.player = this;
         slash.knockbackPower = playerStat.enemyKnockbackPower;
@@ -836,8 +844,10 @@ public class Player : MonoBehaviour
     public void ThrowSilkBurst()
     {
         silkBurstInstance = Instantiate(silkBurstPrefab, transform, false);
-        silkBurstInstance.transform.localPosition = new Vector3(4, 0, 0);
+        silkBurstInstance.transform.localPosition = new Vector3(-4, -0.5f, 0);
         silkBurstInstance.GetComponent<SilkBurst>().playerPos = transform.position;
+        silkBurstInstance.transform.rotation = transform.rotation;
+        silkBurstInstance.transform.Rotate(0, 0, 180);
     }
 
     public void CatchSilkBurstRecoil()
