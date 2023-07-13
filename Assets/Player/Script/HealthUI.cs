@@ -6,15 +6,17 @@ using UnityEngine.UI;
 public class HealthUI : MonoBehaviour
 {
     private PlayerData playerStat;
-    public Sprite maskIcon;
-    public Sprite emptyMaskIcon;
-    private List<Image> maskList = new List<Image>();
-    public Image maskPrefab;
+    //public Sprite maskIcon;
+    //public Sprite emptyMaskIcon;
+    //private List<Image> maskList = new List<Image>();
+    public GameObject HP;
+    //public Image maskPrefab;
 
     private int lastCurrentHp;
     private int lastMaxHp;
     private int lastLifebloodHp;
-
+    private float mInitBarWidth = 0f;
+    //private float baseHP = 100f;
 
     private void Start()
     {
@@ -22,12 +24,14 @@ public class HealthUI : MonoBehaviour
         lastCurrentHp = playerStat.currentHp;
         lastMaxHp = playerStat.maxHp;
         lastLifebloodHp = playerStat.lifebloodHp;
-
+        //HP.GetComponent<RectTransform>().sizeDelta = new Vector2(160,20);
+        mInitBarWidth = HP.GetComponent<RectTransform>().sizeDelta.x;
         InitNumberOfMask();
     }
 
     private void Update()
     {
+        //Debug.Log("size.x = "+ HP.GetComponent<RectTransform>().sizeDelta.x);
         UpdateHealthUI();
     }
 
@@ -48,11 +52,6 @@ public class HealthUI : MonoBehaviour
         }
 
         // Check for lifeblood hp (the blue temporary bonus masks)
-        if (lastLifebloodHp != playerStat.lifebloodHp)
-        {
-            InitNumberOfMask();
-            lastLifebloodHp = playerStat.lifebloodHp;
-        }
 
 
         //// Update according to max hp
@@ -75,37 +74,35 @@ public class HealthUI : MonoBehaviour
     public void InitNumberOfMask()
     {
         // Delete all masks first
-        foreach (Transform child in transform)
-        {
-            GameObject.Destroy(child.gameObject);
-        }
-        maskList.Clear();
+        //foreach (Transform child in transform)
+        //{
+        //    GameObject.Destroy(child.gameObject);
+        //}
+        //maskList.Clear();
+        float MaxPercentage = (float)playerStat.maxHp / (float)lastMaxHp;
+        Vector2 s = HP.GetComponent<RectTransform>().sizeDelta;
+        s.x = MaxPercentage * mInitBarWidth;
+        HP.GetComponent<RectTransform>().sizeDelta = s;
 
-        for (int i = 0; i < playerStat.maxHp; i++)
-        {
-            Image newMask = Instantiate(maskPrefab, transform, false);
-            maskList.Add(newMask);
-        }
-
-        for (int i = 0; i < playerStat.lifebloodHp; i++)
-        {
-            Image newLifebloodMask = Instantiate(maskPrefab, transform, false);
-            newLifebloodMask.color = new Color(0f, 0.75f, 1f);
-            maskList.Add(newLifebloodMask);
-        }
 
         RecalibrateCurrentMask();
     }
 
     public void RecalibrateCurrentMask()
     {
-        for (int i = 0; i < playerStat.maxHp; i++)
-        {
-            if (i < playerStat.currentHp)
-                maskList[i].sprite = maskIcon;
-            else
-                maskList[i].sprite = emptyMaskIcon;
-        }
+        //for (int i = 0; i < playerStat.maxHp; i++)
+        //{
+            //if (i < playerStat.currentHp)
+               //maskList[i].sprite = maskIcon;
+            //else
+                //maskList[i].sprite = emptyMaskIcon;
+        //}
+        float hpPercentage = (float)playerStat.currentHp/ (float)playerStat.maxHp;
+        //Debug.Log("hpPercentage " + hpPercentage);
+        //Debug.Log("currentHp " + playerStat.currentHp);
+        Vector2 s = HP.GetComponent<RectTransform>().sizeDelta;
+        s.x = hpPercentage * mInitBarWidth;
+        HP.GetComponent<RectTransform>().sizeDelta = s;
         lastCurrentHp = playerStat.currentHp;
     }
 }

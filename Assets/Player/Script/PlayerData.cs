@@ -6,13 +6,13 @@ using UnityEngine;
 public class PlayerData
 {
     [Header("Stat")]
-    public int maxHp = 5;
-    public int currentHp = 5;
+    public int maxHp = 100;
+    public int currentHp = 100;
     public int lifebloodHp = 0;
     public int currentSilk = 0;
-    public int maxSilk = 8;
-    public int silkHeal = 3;
-    public int damage = 4;
+    public int maxSilk = 20;
+    public int silkHeal = 20;
+    public int damage = 10;
     public float moveSpeed = 7f;
     public float jumpForce = 12f;
     public float dashForce = 20f;
@@ -25,6 +25,9 @@ public class PlayerData
     public float parryWindow = 0.25f;
     public float parryCooldown = 1f;
     public float toolCooldown = 0.35f;
+    public float level = 1f;
+    public float currentExp = 90f;
+    public float maxExp = 100f;
 
     [Header("Location")]
     public string respawnScene = "DirtCave0";
@@ -54,13 +57,13 @@ public class PlayerData
 
     public void ResetToNewGameState()
     {
-        maxHp = 5;
-        currentHp = 5;
+        maxHp = 100;
+        currentHp = 100;
         lifebloodHp = 0;
         currentSilk = 0;
-        maxSilk = 8;
-        silkHeal = 3;
-        damage = 4;
+        maxSilk = 20;
+        silkHeal = 20;
+        damage = 10;
         moveSpeed = 7f;
         jumpForce = 12f;
         dashForce = 20f;
@@ -74,6 +77,9 @@ public class PlayerData
         parryCooldown = 1f;
         copperShard = 0;
         scaleShard = 0;
+        level = 1f;
+        currentExp = 0f;
+        maxExp = 100f;
         stunTime = 0.4f;
         iFrameTime = 1.5f;
         respawnChairName = "";

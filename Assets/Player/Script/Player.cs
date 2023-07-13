@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
     public PlayerData playerStat;
 
     [Header("Movement")]
-    [SerializeField] private int dashCount;
-    [SerializeField] private int jumpCount;
+    [SerializeField] private float dashCount;
+    [SerializeField] private float jumpCount;
     [SerializeField] private float verInput;
     [SerializeField] private float horInput;
     private float jumpTimer;
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     private bool redBox, greenBox;
 
     [Header("Combat")]
-    public int disableControlCounter = 0;
+    public float disableControlCounter = 0f;
     /**
      * Using integer instead of bool allow us to easy keep tracking of how many NON-INTERRUPTABLE
     * effects are disabling the player control. For example, player get stunned and paralyzed

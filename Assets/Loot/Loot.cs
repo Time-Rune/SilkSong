@@ -43,10 +43,12 @@ public class Loot : MonoBehaviour
             {
                 case LootEnum.copperShard:
                     player.playerStat.copperShard += value;
+                    player.playerStat.currentExp += value * 2;
                     break;
 
                 case LootEnum.scaleShard:
                     player.playerStat.scaleShard += value;
+                    player.playerStat.currentExp += value * 2;
                     break;
 
                 default:
