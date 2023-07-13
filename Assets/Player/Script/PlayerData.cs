@@ -26,6 +26,7 @@ public class PlayerData
     public float parryCooldown = 1f;
     public float toolCooldown = 0.35f;
     public float level = 1f;
+    public float ability = 0f;
     public float currentExp = 90f;
     public float maxExp = 100f;
 
@@ -78,6 +79,7 @@ public class PlayerData
         copperShard = 0;
         scaleShard = 0;
         level = 1f;
+        ability = 0f;
         currentExp = 0f;
         maxExp = 100f;
         stunTime = 0.4f;

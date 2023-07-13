@@ -48,6 +48,8 @@ public class ExpUI : MonoBehaviour
         {
             playerStat.currentExp -= playerStat.maxExp;
             lastCurrentExp -= playerStat.maxExp;
+            playerStat.ability++;
+            playerStat.level++;
             UpdateExp();
         }
 
