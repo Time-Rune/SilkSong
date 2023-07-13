@@ -636,18 +636,18 @@ public class Player : MonoBehaviour
     {
         if (isFacingLeft)
         {
-            if (transform.localScale.x != -1)
+            if (transform.localScale.x != 1)
             {
-                transform.localScale = new Vector2(-1, 1);
+                transform.localScale = new Vector2(1, 1);
                 if (isGrounded)
                     dustPE.Play();
             }
         }
         else
         {
-            if (transform.localScale.x != 1)
+            if (transform.localScale.x != -1)
             {
-                transform.localScale = new Vector2(1, 1);
+                transform.localScale = new Vector2(-1, 1);
                 if (isGrounded)
                     dustPE.Play();
             }
