@@ -24,8 +24,11 @@ public class BatterPetAI : MonoBehaviour
     [SerializeField] private float beamAimWidth = 0.05f;
     [SerializeField] private float beamDamageWidth = 0.05f;
 
+    public PlayerData playerStat;
+
     private void Start()
     {
+        playerStat = GameMaster.instance.playerData;
         stat = GetComponent<Enemy>();
         player = GameObject.Find("Tenroh").transform;
         attackTimer = attackTimer * 0.75f; // fast first time attack
@@ -34,6 +37,7 @@ public class BatterPetAI : MonoBehaviour
     private void Update()
     {
         if (owner.stat.isDead)
+            playerStat.currentExp += 50;
             stat.Death();
 
         if (stat.isDead)

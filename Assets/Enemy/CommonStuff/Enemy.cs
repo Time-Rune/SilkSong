@@ -38,8 +38,10 @@ public class Enemy : MonoBehaviour
     private Collider2D bodyCollider;
     public GameObject[] PSPrefabs;
 
+    public PlayerData playerStat;
     private void Start()
     {
+        playerStat = GameMaster.instance.playerData;
         currentHp = maxHp;
         rb = GetComponent<Rigidbody2D>();
         originalMat = sprite.material;
@@ -114,6 +116,9 @@ public class Enemy : MonoBehaviour
 
     public void Death()
     {
+        playerStat.currentExp += 5;
+        
+
         // Change collision and sprite
         GameMaster.instance.worldData.enemyKillCount[(int)enemyType] += 1;
         bodyCollider.enabled = false;

@@ -19,3 +19,5 @@ MonoBehaviour:
     content: Do you sell useful tools?
   - speaker: Horcat
     content: I sell useful tools. Horcat has ware if you has shards.
+  - speaker: Horcat
+    content: I sell useful tools. Horcat has ware if you has shards.

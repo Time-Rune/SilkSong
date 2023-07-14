@@ -351,6 +351,7 @@ public class Player : MonoBehaviour
         }
     }
 
+
     private void HandleParry()
     {
         InputAction parryAction = inputMaster.Gameplay.Parry;
@@ -625,29 +626,42 @@ public class Player : MonoBehaviour
         dashCoroutine = StartCoroutine(Dash(true, dashDirection));
 
         // Attack
+        /*
         anim.SetBool("pogoAttack", true);
         PlayerSlash pogoSlash = Instantiate(pogoSlashPrefab, pogoSlashPos, false);
         pogoSlash.transform.localPosition = Vector3.zero;
         pogoSlash.disappearTime = playerStat.dashTime;
         pogoSlash.player = this;
+        */
+        anim.SetBool("pogoAttack", true);
+        PlayerSlash pogoSlash = Instantiate(pogoSlashPrefab, pogoSlashPos, false);
+        Vector3 v = Vector3.zero;
+        v.x = -0.75f;
+        v.y = -0.5f;
+        pogoSlash.transform.localPosition = v;
+        pogoSlash.transform.rotation = transform.rotation;
+        pogoSlash.transform.Rotate(0, 0, -90);
+        pogoSlash.disappearTime = playerStat.dashTime;
+        pogoSlash.player = this;
+        
     }
 
     private void Flip()
     {
         if (isFacingLeft)
         {
-            if (transform.localScale.x != -1)
+            if (transform.localScale.x != 1)
             {
-                transform.localScale = new Vector2(-1, 1);
+                transform.localScale = new Vector2(1, 1);
                 if (isGrounded)
                     dustPE.Play();
             }
         }
         else
         {
-            if (transform.localScale.x != 1)
+            if (transform.localScale.x != -1)
             {
-                transform.localScale = new Vector2(1, 1);
+                transform.localScale = new Vector2(-1, 1);
                 if (isGrounded)
                     dustPE.Play();
             }
@@ -678,6 +692,7 @@ public class Player : MonoBehaviour
         }
     }
 
+
     public void AttackDealDamage(bool isUpAttack)
     {
         PlayerSlash slash = Instantiate(slashPrefab, transform, false);
@@ -689,7 +704,8 @@ public class Player : MonoBehaviour
         }
         else
         {
-            slash.transform.localPosition += Vector3.right * 1f;
+            slash.transform.localRotation = Quaternion.Euler(0, 0, 180);
+            slash.transform.localPosition += Vector3.right * -1f;
         }
         slash.player = this;
         slash.knockbackPower = playerStat.enemyKnockbackPower;
@@ -836,9 +852,12 @@ public class Player : MonoBehaviour
     public void ThrowSilkBurst()
     {
         silkBurstInstance = Instantiate(silkBurstPrefab, transform, false);
-        silkBurstInstance.transform.localPosition = new Vector3(4, 0, 0);
+        silkBurstInstance.transform.localPosition = new Vector3(-4, -0.5f, 0);
         silkBurstInstance.GetComponent<SilkBurst>().playerPos = transform.position;
+        silkBurstInstance.transform.rotation = transform.rotation;
+        silkBurstInstance.transform.Rotate(0, 0, 180);
     }
+
 
     public void CatchSilkBurstRecoil()
     {

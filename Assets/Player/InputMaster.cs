@@ -1047,17 +1047,77 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenShop"",
+                    ""type"": ""Button"",
+                    ""id"": ""88ec4712-3b6b-435c-88d7-7fcf8c00e24b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CloseShop"",
+                    ""type"": ""Button"",
+                    ""id"": ""93c87abe-19e8-4d8a-a311-95f155c63ee3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""StartTalk"",
+                    ""type"": ""Button"",
+                    ""id"": ""f9d2bf4e-77f5-43b4-9ab3-acba61e61abf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""98fa902c-d7c8-4ea3-8700-083c3cadf5bc"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
                     ""action"": ""Continue"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ae1a0f9-c8cd-4eb4-80f2-79484e5dc4ce"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenShop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c5682fce-7fac-4d34-82d2-4085202003e4"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CloseShop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""85456bcb-953f-4ff2-9dea-c5f15a5a3beb"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StartTalk"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1125,6 +1185,9 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         // Dialogue
         m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
         m_Dialogue_Continue = m_Dialogue.FindAction("Continue", throwIfNotFound: true);
+        m_Dialogue_OpenShop = m_Dialogue.FindAction("OpenShop", throwIfNotFound: true);
+        m_Dialogue_CloseShop = m_Dialogue.FindAction("CloseShop", throwIfNotFound: true);
+        m_Dialogue_StartTalk = m_Dialogue.FindAction("StartTalk", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1415,11 +1478,17 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Dialogue;
     private List<IDialogueActions> m_DialogueActionsCallbackInterfaces = new List<IDialogueActions>();
     private readonly InputAction m_Dialogue_Continue;
+    private readonly InputAction m_Dialogue_OpenShop;
+    private readonly InputAction m_Dialogue_CloseShop;
+    private readonly InputAction m_Dialogue_StartTalk;
     public struct DialogueActions
     {
         private @InputMaster m_Wrapper;
         public DialogueActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @Continue => m_Wrapper.m_Dialogue_Continue;
+        public InputAction @OpenShop => m_Wrapper.m_Dialogue_OpenShop;
+        public InputAction @CloseShop => m_Wrapper.m_Dialogue_CloseShop;
+        public InputAction @StartTalk => m_Wrapper.m_Dialogue_StartTalk;
         public InputActionMap Get() { return m_Wrapper.m_Dialogue; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1432,6 +1501,15 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
             @Continue.started += instance.OnContinue;
             @Continue.performed += instance.OnContinue;
             @Continue.canceled += instance.OnContinue;
+            @OpenShop.started += instance.OnOpenShop;
+            @OpenShop.performed += instance.OnOpenShop;
+            @OpenShop.canceled += instance.OnOpenShop;
+            @CloseShop.started += instance.OnCloseShop;
+            @CloseShop.performed += instance.OnCloseShop;
+            @CloseShop.canceled += instance.OnCloseShop;
+            @StartTalk.started += instance.OnStartTalk;
+            @StartTalk.performed += instance.OnStartTalk;
+            @StartTalk.canceled += instance.OnStartTalk;
         }
 
         private void UnregisterCallbacks(IDialogueActions instance)
@@ -1439,6 +1517,15 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
             @Continue.started -= instance.OnContinue;
             @Continue.performed -= instance.OnContinue;
             @Continue.canceled -= instance.OnContinue;
+            @OpenShop.started -= instance.OnOpenShop;
+            @OpenShop.performed -= instance.OnOpenShop;
+            @OpenShop.canceled -= instance.OnOpenShop;
+            @CloseShop.started -= instance.OnCloseShop;
+            @CloseShop.performed -= instance.OnCloseShop;
+            @CloseShop.canceled -= instance.OnCloseShop;
+            @StartTalk.started -= instance.OnStartTalk;
+            @StartTalk.performed -= instance.OnStartTalk;
+            @StartTalk.canceled -= instance.OnStartTalk;
         }
 
         public void RemoveCallbacks(IDialogueActions instance)
@@ -1502,5 +1589,8 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
     public interface IDialogueActions
     {
         void OnContinue(InputAction.CallbackContext context);
+        void OnOpenShop(InputAction.CallbackContext context);
+        void OnCloseShop(InputAction.CallbackContext context);
+        void OnStartTalk(InputAction.CallbackContext context);
     }
 }
