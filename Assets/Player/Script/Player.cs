@@ -87,8 +87,10 @@ public class Player : MonoBehaviour
 
     public bool inMenu;
 
+
     [Header("Misc")]
     public State state = State.idle;
+    public bool fff = false;
     private Coroutine dashCoroutine;
     private Coroutine parryCoroutine;
     public Material flashMat;
@@ -147,8 +149,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(fff);
         CheckGrounded();
-
+        HandleFFF();
         if (!inAttack)
             attackTimer += Time.deltaTime;
 
@@ -276,7 +279,30 @@ public class Player : MonoBehaviour
             coyoteAirTimer = coyoteTime + 1f; // Prevent coyote double jump bug
         }
     }
+    public bool fffstate = false;
+    public static float ffftime = 0f;
+    public static float ffft = 0.4f;
+    public static float fffnowtime = 0f;
+    private void HandleFFF()
+    {
+        anim.SetBool("fff", fff);
+        if (fff == true && !fffstate)
+        {
+            ffftime = Time.time;
+            fffstate = true;
+        }
+        if (fff == true && fffstate)
+        {
+            fffnowtime = Time.time;
+            if (fffnowtime - ffftime >= ffft)
+            {
+                fff = false;
+                anim.SetBool("fff", fff);
+                fffstate = false;
+            }
 
+        }
+    }
     private void HandleDash()
     {
         InputAction dashAction = inputMaster.Gameplay.Dash;
@@ -720,6 +746,8 @@ public class Player : MonoBehaviour
         inAttack = false;
         anim.SetBool("dashAttack", false);
         anim.SetBool("pogoAttack", false);
+        anim.SetBool("fff", true);
+        this.fff = true;
         rb.velocity = Vector2.zero;
         rb.AddForce(dashRecoil, ForceMode2D.Impulse);
         if (resetDash)
