@@ -49,28 +49,13 @@ public class ExpUI : MonoBehaviour
             playerStat.currentExp -= playerStat.maxExp;
             lastCurrentExp -= playerStat.maxExp;
             playerStat.ability++;
-            playerStat.level++;
             UpdateExp();
+            playerStat.level++;
         }
 
         // Check for lifeblood hp (the blue temporary bonus masks)
 
 
-        //// Update according to max hp
-        //if (playerStat.maxHp + playerStat.lifebloodHp > maskList.Count)
-        //    IncreaseNumberOfMask();
-        //if (playerStat.maxHp + playerStat.lifebloodHp < maskList.Count)
-        //    InitNumberOfMask();
-
-        ////TODO: Possible room for optimization
-        //// Update according to current hp
-        //for (int i = 0; i < maskList.Count; i++)
-        //{
-        //    if (i < playerStat.currentHp)
-        //        maskList[i].sprite = maskIcon;
-        //    else
-        //        maskList[i].sprite = emptyMaskIcon;
-        //}
     }
 
     public void InitNumberOfMask()

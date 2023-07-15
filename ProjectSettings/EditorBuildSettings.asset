@@ -71,4 +71,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Level/MossyCavernArea/MossyTown.unity
     guid: 8393c2a0bc142df4b81d5e95006a897a
+  - enabled: 1
+    path: Assets/Scene/Level/BerryScenes/BerryScene1.unity
+    guid: 7193f24dd33dc0944b73debec811c40a
+  - enabled: 1
+    path: Assets/Scene/Level/BerryScenes/BerryScene2.unity
+    guid: 52cda7ca58786cc4eb95cca7aee67f7c
+  - enabled: 1
+    path: Assets/Scene/Level/BerryScenes/BerryScene3.unity
+    guid: edb80d2ffb842a44da8fe62354a1cc80
   m_configObjects: {}

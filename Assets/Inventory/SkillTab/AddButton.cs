@@ -8,15 +8,12 @@ using UnityEngine.UI;
 public class AddButton : MonoBehaviour
 {
     // Start is called before the first frame update
-    private GameObject selectFrame;
-    private Image image;
     private PlayerData playerStat;
     public int type;
     //private bool canUP;
     public void OnEnable()
     {
-        //selectFrame = transform.GetChild(0).gameObject;
-        image = GetComponent<Image>();
+        //selectFrame = transform.GetChild(0).gameObject
         playerStat = GameMaster.instance.playerData;
         //selectFrame.SetActive(true);
         //UpdateEquipState();
@@ -45,18 +42,33 @@ public class AddButton : MonoBehaviour
             switch (type)
             {
                 case 1:
-                    playerStat.maxHp += 20;
+                    if(playerStat.nowHPLe < playerStat.maxHPLe)
+                    {
+                        playerStat.maxHp += 20;
+                        playerStat.nowHPLe++;
+                        playerStat.ability--;
+                    }
                     break;
                 case 2:
-                    playerStat.maxSilk += 5;
+                    if (playerStat.nowSPLe < playerStat.maxSPLe)
+                    {
+                        playerStat.maxSilk += 5;
+                        playerStat.nowSPLe++;
+                        playerStat.ability--;
+                    }
                     break;
                 case 3:
-                    playerStat.damage += 5;
+                    if (playerStat.nowDamageLe < playerStat.maxDamageLe)
+                    {
+                        playerStat.damage += 5;
+                        playerStat.nowDamageLe++;
+                        playerStat.ability--;
+                    }
                     break;
                 default:
                     break;
             }
-            playerStat.ability--;
+            
         }
         
         

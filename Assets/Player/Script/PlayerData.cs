@@ -27,8 +27,14 @@ public class PlayerData
     public float toolCooldown = 0.35f;
     public float level = 1f;
     public float ability = 0f;
-    public float currentExp = 90f;
+    public float currentExp = 0f;
     public float maxExp = 100f;
+    public float maxHPLe = 10f;
+    public float nowHPLe = 0f;
+    public float maxSPLe = 10f;
+    public float nowSPLe = 0f;
+    public float maxDamageLe = 10f;
+    public float nowDamageLe = 0f;
 
     [Header("Location")]
     public string respawnScene = "DirtCave0";
@@ -38,6 +44,18 @@ public class PlayerData
     [Header("Inventory")]
     public int copperShard = 0;
     public int scaleShard = 0;
+
+    [Header("Skill")]
+    public bool SilkDash = false;
+    public bool StrongDash = false;
+    public bool RocketDash = false;
+    public bool SlenderNeedle = false;
+    public bool SpeedyHack = false;
+    public bool NeedleWave = false;
+    public bool NeedleJect = false;
+    public bool SilkBurst = false;
+    public bool CrazySwivel = false;
+    public bool SharpDash = false;
 
     public int[] inventoryItemAmount; // all item
 
@@ -82,6 +100,12 @@ public class PlayerData
         ability = 0f;
         currentExp = 0f;
         maxExp = 100f;
+        maxHPLe = 10f;
+        nowHPLe = 0f;
+        maxSPLe = 10f;
+        nowSPLe = 0f;
+        maxDamageLe = 10f;
+        nowDamageLe = 0f;
         stunTime = 0.4f;
         iFrameTime = 1.5f;
         respawnChairName = "";
